@@ -61,3 +61,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from msm8956-common
 $(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
+
+include device/xiaomi/hydrogen/qcom_utils.mk
+include device/xiaomi/hydrogen/qcom_target.mk
