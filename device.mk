@@ -61,3 +61,12 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from msm8956-common
 $(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
+
+$(call inherit-product, device/xiaomi/hydrogen/utils.mk)
+
+# Board platforms lists to be used for
+# TARGET_BOARD_PLATFORM specific featurization
+QCOM_BOARD_PLATFORMS := msm8952
+
+# List of targets that use video hw
+MSM_VIDC_TARGET_LIST := msm8952
